@@ -58,7 +58,13 @@ section::before{
 }
 
 #imgsz{
-    border-radius: 30%;
+    position: relative;
+    transition: transform 0.3s ease; /* Efek animasi zoom */
+}
+
+
+#imgsz:hover {
+    transform: scale(1.2); /* Faktor zoom saat mouse hover (1.2 = 120%) */
 }
 
 #arrow{

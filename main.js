@@ -1,3 +1,6 @@
+alert ('Selamat datang di portfolio Muhammad Suyuti')
+
+
 function toggleDetail(e){
     const target = $(e.target)
 
@@ -34,4 +37,4 @@ function onFormSubmit(e){
     }
 }
 
-alert ('Selamat datang di portfolio Muhammad Suyuti')
+
