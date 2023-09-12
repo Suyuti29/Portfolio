@@ -1,4 +1,4 @@
-alert ('Selamat datang di portfolio Muhammad Suyuti')
+// alert ('Selamat datang di portfolio Muhammad Suyuti')
 
 
 function toggleDetail(e){
