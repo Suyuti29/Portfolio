@@ -33,3 +33,5 @@ function onFormSubmit(e){
         $(message).val("")
     }
 }
+
+alert ('Selamat datang di portfolio Muhammad Suyuti')
