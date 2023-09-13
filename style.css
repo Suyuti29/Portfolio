@@ -191,6 +191,11 @@ footer {
      }
 }
 
+@media only screen and (max-width: 376px) {
+    #rowss a {
+       font-size: 12px;
+     }
+}
 
 @keyframes upDown{
     0%{
