@@ -168,6 +168,9 @@ footer {
         width: 50%;
     }
 
+    #rowss a {
+        font-size: 15px;
+      }
   
 }
 
@@ -181,6 +184,13 @@ footer {
        font-size: 15px;
      }
 }
+
+@media only screen and (max-width: 398px) {
+    #rowss a {
+       font-size: 13px;
+     }
+}
+
 
 @keyframes upDown{
     0%{
