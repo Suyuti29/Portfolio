@@ -258,40 +258,39 @@
           </div>
         </div>
         <div class="col-12 col-lg-5">
-          <form class="contact-form" onformSubmit(event)>
+          <form class="contact-form" method="POST" 
+          action="https://script.google.com/macros/s/AKfycbyewH8YBYKbSIGcZeLuACY8b-mZx1BkHcMlgigRc9bc86sh8-PpnhJUc6jFndChCygO/exec"
+          id="my-form">
             <div class="mb-3">
-              <label for="inp_email" class="form-label">Email address</label>
+              <label for="email" class="form-label">Email address</label>
               <input
                 type="email"
                 class="form-control"
-                id="inp_email"
-                placeholder="examples@mail.com"
-                required
+                id="email"
+                placeholder="examples@mail.com" name="email"
               />
-              <div id="emailHelp" class="form-text">
+              <!-- <div id="emailHelp" class="form-text">
                 We'll never share your email with anyone else.
-              </div>
+              </div> -->
             </div>
             <div class="mb-3">
-              <label for="inp_subject" class="form-label">Subject</label>
+              <label for="subject" class="form-label">Subject</label>
               <input
-                type="password"
                 class="form-control"
-                id="inp_subject1"
-                placeholder="Your Subject"
+                id="subject"
+                placeholder="Your Subject" name="subject"
               />
             </div>
             <div class="mb-3">
-              <label for="inp_message" class="form-label">Message</label>
-              <input
-                type="password"
+              <label for="message" class="form-label">Message</label>
+              <input 
                 class="form-control"
                 id="inp_message"
-                placeholder="Your Message"
+                placeholder="Your Message" name="message"
               />
             </div>
             <div class="d-flex justify-content-center mt-5">
-              <button type="submit" class="btn button">Submit</button>
+              <button class="btn button">Submit</button>
             </div>
           </form>
         </div>
@@ -303,6 +302,26 @@
       <p>Copyright &copy; 2022 Muhammad Suyuti</p>
     </footer>
 
+
+<script>
+  window.addEventListener("load", function() {
+  const form = document.getElementById('my-form');
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    const data = new FormData(form);
+    const action = e.target.action;
+    fetch(action, {
+      method: 'POST',
+      body: data,
+    })
+    .then(() => {
+      alert("Email anda sudah berhasil terkirim!");
+    })
+  });
+});
+
+</script>
+   
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
       integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
