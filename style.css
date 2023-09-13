@@ -191,9 +191,9 @@ footer {
      }
 }
 
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 360px) {
     #rowss a {
-       font-size: 12px;
+       font-size: 11px;
      }
 }
 
