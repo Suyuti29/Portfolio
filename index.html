@@ -303,8 +303,9 @@
         <p>Copyright &copy; 2022 Muhammad Suyuti</p>
       
       <div>
-        <button id="backToTopBtn" class="btn">
-          <i class="fas fa-arrow-up"></i> <!-- Ikon dari Font Awesome -->
+        <button id="backToTopBtn" class="btne">
+          <img src="images/top.svg" width="25px" height="25" alt="">
+          <!-- <i class="fas fa-arrow-up"></i> Ikon dari Font Awesome -->
         </button>
       </div>
     </footer>
@@ -322,7 +323,8 @@
       body: data,
     })
     .then(() => {
-      alert("Email anda sudah berhasil terkirim!");
+      alert("Email anda sudah berhasil terkirim! Terima kasih.");
+      window.location.reload();
     })
   });
 });
