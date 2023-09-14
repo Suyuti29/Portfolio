@@ -17,6 +17,29 @@ function toggleDetail(e){
 
 }
 
+// script.js
+document.addEventListener("DOMContentLoaded", function () {
+    var button = document.getElementById("backToTopBtn");
+
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 3500) {
+            button.style.display = "block";
+        } else {
+            button.style.display = "none";
+        }
+    });
+
+    button.addEventListener("click", function () {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+});
+
+
+
+
 // function onFormSubmit(e){
 //     e.preventDefault()
 //     const email = $("#inp_email")
