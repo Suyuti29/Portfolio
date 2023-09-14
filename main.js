@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var button = document.getElementById("backToTopBtn");
 
     window.addEventListener("scroll", function () {
-        if (window.scrollY > 3500) {
+        if (window.scrollY > 3700) {
             button.style.display = "block";
         } else {
             button.style.display = "none";
