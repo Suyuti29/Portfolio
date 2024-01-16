@@ -163,6 +163,14 @@ footer {
     
 }
 
+.pengja::before {
+    content: 'Detail Tim dan Penjelasan Jobdesk ';
+}
+
+.pengja{
+    padding-bottom: 128px;
+}
+
 /* styles.css */
 .btne {
     display: none;

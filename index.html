@@ -13,49 +13,51 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-
-    <nav class="navbar navbar-expand-lg fixed-top">
-      <div class="container">
-        <a class="navbar-brand fs-3 fw-bold" href="#">Muhammad Suyuti</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#work">Work</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
+    <section id="navbar">
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+          <a class="navbar-brand fs-3 fw-bold" href="#">Muhammad Suyuti</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#work">Work</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
-
-    <ul>
-      <div>
-        <a href=""></a>
-      </div>
-    </ul>
+      </nav>
+      <ul>
+        <div>
+          <a href=""></a>
+        </div>
+      </ul>
+    </section>
+    
 
     <section id="home" class="home container">
       <div
@@ -65,12 +67,10 @@
           <h3 class="fw-semibold">Hi, Saya</h3>
           <h1 class="fw-bold">Muhammad Suyuti</h1>
           <p>
-            Lulusan Rekayasa Sistem Komputer Universitas Serang Raya tahun 2018.
-            Memiliki pengalaman sebagai Staff Administrasi Gudang Logistik di
-            PT. Ciomas Adisatwa dan Purchasing di PT. Pou Chen Indonesia sebagai
-            user SAP Material Management. Saya memiliki minat berkarir sebagai
-            staff purchasing, bidang IT, administrasi dan teknologi di bidang
-            pertanian.
+            Halo, saya Muhammad Suyuti seorang berpengalaman dibidang Staff Administrasi Gudang Logistik di
+             PT. Ciomas Adisatwa dan Staff Planning di PT. Pou Chen Indonesia sebagai user SAP Material  Management. 
+             Sesuai dengan kemampuan dan pengalaman, saya seorang yang suka belajar dan bekerjasama dalam tim. 
+             Saya memiliki  minat  berkarir sebagai staff purchasing, bidang IT, administrasi dan teknologi di bidang pertanian.
           </p>
           <a class="btn button" href="images/logo.png">Resume</a>
         </div>
@@ -92,7 +92,7 @@
             <div>
               <h5>PT. Pou Chen Indonesia (Banten, Indonesia)</h5>
               <p>
-                Staff Purchasing, SAP Material Management (November 2019 – Januari 2023)
+                Staff Planning, SAP Material Management (November 2019 – Januari 2023)
               </p>
             </div>
             <button class="btn button" onclick="toggleDetail(event)">
@@ -100,11 +100,10 @@
             </button>
           </div>
           <p class="about-exp-item-detail">
-            Tugas dan tanggung jawab saya, membuat info record, membuat po,
-            input surat jalan, input di sistem ces, dan membuat pembayaran
-            invoice dari supplier. Selain itu lingkup kerja yang lain ialah
-            berkomunikasi aktif baik dengan supplier, bagian finance, dan pihak
-            exim.
+            Tugas dan tanggung jawab saya, membuat info record, membuat po, input surat jalan, 
+            input di sistem ces, membuat pembayaran invoice dari supplier dan membuat laporan data AID marketing. 
+            Selain itu lingkup kerja yang lain ialah melakukan audit, berkomunikasi aktif. baik dengan supplier, 
+            bagian finance, dan pihak exim.
           </p>
         </div>
         <div class="about-exp-item">
@@ -112,7 +111,7 @@
             <div>
               <h5>PT. Ciomas Adisatwa (Banten, Indonesia)</h5>
               <p>
-                Staff Administrasi Gudang Logistik (Agustus 2012 – Januari 2013)
+                Staff Administrasi Gudang Logistik (Agustus 2012 – Desember 2012)
               </p>
             </div>
             <button class="btn button" onclick="toggleDetail(event)">
@@ -280,6 +279,16 @@
       </div>
     </section>
 
+    <section id="detailkerja" class="pengja container" >
+      <div>
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <iframe src="dok/Detail Tim dan Penjelasan Jobdesk.pdf" width="100%" height="600px"></iframe>
+            </div>
+        </div>
+      </div>
+    </section>
+    
 
     <footer>
       <div class="">
@@ -294,25 +303,25 @@
     </footer>
 
 
-<script>
-  window.addEventListener("load", function() {
-  const form = document.getElementById('my-form');
-  form.addEventListener("submit", function(e) {
-    e.preventDefault();
-    const data = new FormData(form);
-    const action = e.target.action;
-    fetch(action, {
-      method: 'POST',
-      body: data,
-    })
-    .then(() => {
-      alert("Email anda sudah berhasil terkirim! Terima kasih.");
-      window.location.reload();
-    })
-  });
-});
+    <script>
+          window.addEventListener("load", function() {
+          const form = document.getElementById('my-form');
+          form.addEventListener("submit", function(e) {
+            e.preventDefault();
+            const data = new FormData(form);
+            const action = e.target.action;
+            fetch(action, {
+              method: 'POST',
+              body: data,
+            })
+            .then(() => {
+              alert("Email anda sudah berhasil terkirim! Terima kasih.");
+              window.location.reload();
+            })
+          });
+        });
 
-</script>
+    </script>
    
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
